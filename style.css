@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg-intro-mobile.png);
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/*HERO SECTION BELOW*/
+
+.hero > h1 {
+    font-weight: 700;
+}
+
+/*'OTHER' SECTION BELOW*/
+
+.stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    padding: 1rem;
+    background-color: white;
+    border-radius: .25rem;
+}
+
+#trial {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: .25rem;
+    margin-bottom: .75rem;
+}
+
+input {
+    border-radius: .25rem;
+    outline: none;
+    border: 1px solid hsl(246, 25%, 77%);
+    margin-bottom: .5rem;
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 600;
+}
+
+#submit-btn {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: .25rem;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+#terms-services {
+    color: hsl(246, 25%, 77%);
+    font-size: .5rem;
+}
+
+/*MEDIA QUERY*/
+
