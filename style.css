@@ -9,12 +9,15 @@ body {
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    margin: 0 1.5em;
+    min-height: 100vh;
 }
 
 /*HERO SECTION BELOW*/
 
 .hero {
     text-align: center;
+    font-size: 1.25rem;
 }
 
 .hero > h1 {
@@ -69,17 +72,37 @@ input {
 
 #terms-services {
     color: hsl(246, 25%, 77%);
-    font-size: .5rem;
+    font-size: .75rem;
+}
+
+#terms-services > span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
 }
 
 /*MEDIA QUERY*/
 
 @media(min-width: 600px){
+
+    body {
+        background-image: url(images/bg-intro-desktop.png);
+        background-size:cover ;
+        margin: 0;
+    }
+
+    .main-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
     
     .split {
         display: flex;
         flex-direction: row;
-
+        align-items: center;
+        width: 80%;
     }
 
     .split > * {
@@ -90,9 +113,8 @@ input {
         margin-left: 4em;
     }
 
-    body {
-        background-image: url(images/bg-intro-desktop.png);
-        background-size:cover ;
+    .hero {
+        text-align: start;
     }
 
 }
