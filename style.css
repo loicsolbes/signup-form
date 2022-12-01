@@ -52,7 +52,7 @@ span {
 input {
     border-radius: .4rem;
     outline: none;
-    border: 1px solid hsl(246, 25%, 77%);
+    border: 3px solid hsl(246, 25%, 77%);
     margin-bottom: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -68,6 +68,11 @@ input {
     font-weight: 600;
     font-size: .9rem;
     padding: 1.3em 2em;
+    
+}
+
+.error {
+    color: hsl(0, 100%, 74%);
 }
 
 #terms-services {

@@ -38,10 +38,14 @@
     
     
         <div class="stack">
-          <input id="input-field" type="text" placeholder="First Name">
-          <input id="input-field" type="text" placeholder="Last Name">
-          <input id="input-field" type="text" placeholder="Email Address">
-          <input id="input-field" type="text" placeholder="Password">
+          <input class="input" id="first-name-in" type="text" placeholder="First Name">
+          <p class="error" id="first-name-el"></p>
+          <input class="input" id="last-name-in" type="text" placeholder="Last Name">
+          <p class="error" id="last-name-el"></p>
+          <input class="input" id="email-in" type="text" placeholder="Email Address">
+          <p class="error" id="email-el"></p>
+          <input class="input" id="password-in" type="password" placeholder="Password">
+          <p class="error" id="password-el"></p>
           <button id="submit-btn">CLAIM YOUR FREE TRIAL</button>
           <p id="terms-services">
             By clicking the button, you are agreeing to our <span>Terms and Services</span>
@@ -50,6 +54,8 @@
       </section>
     </div>
   </div>
+
+  <script src="index.js"></script>
 
 </body>
 </html>
