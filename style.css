@@ -51,24 +51,6 @@ span {
     box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-/*
-label {
-    position: relative;
-    border: 1px dotted blue;
-  }
-  
-  label:before {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 0;
-    bottom: 1.5rem;
-    width: 20px;
-    background: url(images/icon-error.svg) center / contain no-repeat;
-    backgroun
-  }
-  */
-
 input {
     width: 100%;
     border-radius: .4rem;
