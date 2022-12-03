@@ -43,9 +43,6 @@ function ValidateEmail(input, el) {
 
 
 
-
-
-
 function isEmpty(inputElement, element, message, label) {
     if(!inputElement.value) {
         inputElement.style.borderColor = 'hsl(0, 100%, 74%)';

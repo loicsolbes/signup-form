@@ -17,11 +17,13 @@ body {
 
 .hero {
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .hero > h1 {
     font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.5rem;
 }
 
 span {
@@ -86,7 +88,12 @@ input {
     font-weight: 600;
     font-size: .9rem;
     padding: 1.3em 2em;
+    box-shadow:hsl(154, 59%, 43%) 0px 4px 0px;
     
+}
+
+#submit-btn:hover {
+    opacity: 0.5;
 }
 
 .error {
@@ -101,11 +108,13 @@ input {
 #terms-services {
     color: hsl(246, 25%, 77%);
     font-size: .75rem;
+    text-align: center;
 }
 
 #terms-services > span {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
+  
 }
 
 /*MEDIA QUERY*/
