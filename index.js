@@ -23,7 +23,8 @@ function ValidateEmail(input, el) {
     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     
     if (input.value.match(validRegex)) {
-        return true;
+        input.value =""
+        el.textContent=""
 
     } else {  
         el.textContent = `Looks like this is not an email`
@@ -50,6 +51,12 @@ function isEmpty(inputElement, element, message, label) {
         inputElement.placeholder = ''
         styling(label)
     }
+    else {
+        inputElement.value = ""
+        element.textContent = ""
+        inputElement.style.borderColor = 'hsl(246, 25%, 77%)'
+        unStyling(label) 
+    }
 }
 
 
@@ -73,14 +80,22 @@ function styling(label) {
         bottom: 2.6rem;
         width: 20px;
         background: url(images/icon-error.svg) center / contain no-repeat;
-        backgroun
       }
     `;
     document.head.appendChild(style);
 }
 
 
-
+function unStyling(label) {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      
+      #${label}:before {
+        background: none;
+      }
+    `;
+    document.head.appendChild(style);
+}
 
 
 
